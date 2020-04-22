@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Searching tool</title>
+  <meta charset="UTF-8">
+  <script src="js/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/my_style.css">
+  <script src="js/config.js"></script>
+  <script src="js/myscript.js"></script>
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12" style="text-align: center; padding:10px">
+        <button type="button" class="btn btn-primary expandAll">Expand All</button>
+        <button type="button" class="btn btn-primary collapseAll">Collapse All</button>
+        <button type="button" class="btn btn-primary reset">Reset</button>
+      </div>
+      <div class="col-md-12" style="padding:10px">
+        <div style="width: 50%; margin:0 auto;">
+          <div>
+            <input class="form-control" type="text" placeholder="Search" id="keyword" aria-label="Search" style="padding-right: 25px">
+
+            <span class="glyphicon glyphicon-search search-icon"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">biz.csv</div>
+    <div class="row biz-data-wrap">
+      
+    </div>
+    <div class="row" style="margin-top: 50px;">sci.csv</div>
+    <div class="row sci-data-wrap">
+      
+    </div>
+    <div class="row" style="margin-top: 50px;">eng.csv</div>
+    <div class="row eng-data-wrap">
+      
+    </div>
+  </div>
+
+</body>
+
+<script>
+
+  $(document).ready(function(){
+
+    init()
+    
+  });
+
+</script>
+
+</html>
